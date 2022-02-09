@@ -1,0 +1,109 @@
+
+/* Draggable*/
+
+.drag-border {
+    border: #ff525b dashed 2px;
+}
+
+.drag-handle {
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+.drag-handle:active { 
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+/* Droppable */
+
+.drag-hint-border {
+    border: #3c763d dashed 2px;
+}
+
+.drag-over-border {
+    border: #fbbc05 dashed 2px;
+}
+
+.drag-transit {
+    border: #3500FF dashed 2px;
+}
+
+.custom_loader{ 
+    background: rgba(255, 255, 255, 0.7); 
+    position: fixed;  
+    z-index: 1500; 
+    top: 0 ;
+    left: 0; 
+    bottom: 0; 
+    width: 100%; 
+    text-align: center;
+}
+.custom_loader::after {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #00ccff;
+    border-bottom: 8px solid #00ccff;
+    width: 50px;
+    height: 50px;
+    z-index: 2000;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    left:calc(50% - 29px);
+    top: 40%;
+    content: "";
+    }
+    
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+    
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.custom_tablist .nav-link {
+    padding: 0.5rem 0.7rem;
+}
+
+.btn_circle{
+    border-radius: 50%;
+    margin: 2px;
+    color: rgb(255, 255, 255) !important;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    text-align: center;
+    line-height: 27px;
+  cursor: pointer;
+}
+
+.custom_word_wrap tr td{word-wrap: anywhere}
+
+.menu .main-menu ul li a {
+    height: 100px !important;
+}
+.category_text{   display: inline-block;   width: 130px;   white-space: nowrap;   overflow: hidden !important;
+    text-overflow: ellipsis;   cursor: pointer;}
+
+.category_text1{   display: inline-block;   width: 160px;   white-space: nowrap;   overflow: hidden !important;
+        text-overflow: ellipsis;   cursor: pointer;}
+.ng2-tag-input{ border: 1px solid #d7d7d7 !important;}
+.ng2-dropdown-menu{ padding: .0em 0 !important; }
+.doc_action .icon{cursor: pointer; }
+.doc_action .icon i:hover{color: #0084ff;}
+.doc_action{list-style: none !important;}
+input:focus{outline: none !important;}
+.file_name_text{   display: inline-block;   width: 90px;   white-space: nowrap;   overflow: hidden !important;
+    text-overflow: ellipsis;   cursor: pointer;}
+
+body{ padding-bottom: 10px !important;}
+footer.page-footer {position: fixed !important; background: #ffff !important; bottom: 0 !important;
+    width: 100%; padding: 10px !important;height: inherit !important ;}
+footer.page-footer .footer-content{    margin-left: 0 !important;   margin-right: 0 !important;}

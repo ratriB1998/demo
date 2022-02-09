@@ -1,0 +1,59 @@
+
+
+
+
+        <body class="background no-footer ltr rounded">
+            <div class="fixed-background" style="opacity: 1;"></div>
+            <main>
+                <div class="container">
+                    <div class="row h-100">
+                        <div class="col-12 col-md-10 mx-auto my-auto">
+                            <div class="card auth-card" style="margin-top: 11%">
+                                <div class="position-relative image-side ">
+        
+                                    <p class=" text-white h2">MAGIC IS IN THE DETAILS</p>
+        
+                                    <p class="white mb-0">
+                                        Please use your credentials to login.
+                                        <br>If you are not a member, please
+                                        <a  class="white">register</a>.
+                                    </p>
+                                </div>
+                                <div class="form-side">
+                                    <a>
+                                       <img src="assets/img/footer_logo.png">
+                                    </a>
+                                    <h6 class="mb-4 mt-4">Login</h6>
+                                   
+                                    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                                       
+                                        <label class="form-group has-float-label mb-4">
+                                            <input class="form-control" formControlName="email"/>
+                                            <span>E-mail</span>
+                                            
+                                        </label>
+        
+                                        <label class="form-group has-float-label mb-4">
+                                            <input class="form-control" type="password" placeholder="" formControlName="password" />
+                                            <span>Password</span>
+                                            
+                                        </label>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <!-- <a >Forgot password?</a> -->
+                                            <button class="btn btn-primary btn-lg btn-shadow" type="submit">LOGIN</button>
+                                            <a class="text-info">Forgot Password</a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- <div class="blur_bg" *ngIf="loading">
+                        <div class="lds-dual-ring"></div>
+                    </div> -->
+                </div>
+            </main>
+            <!-- <div class="custom_loader" *ngIf="isShowLoading"></div> -->
+        </body>
+        
